@@ -6,8 +6,6 @@ def ticks_from_datetime(dt: datetime):
     if type(dt) is not datetime:
         raise TypeError('dt must be a datetime object')
     return (dt - datetime(1, 1, 1)).total_seconds() * 10000000
-    # print("{:f}".format(datetime(1, 1, 1).timestamp()))
-    # return (dt.timestamp() * 10000000)
 
 
 def datetime_from_ticks(ticks: float):
